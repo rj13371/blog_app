@@ -1,0 +1,48 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+*.py[co]
+*.egg-info/
+dist/
+build/
+*~
+
+# Django specific
+*.log
+*.pot
+*.pyc
+__pycache__/
+blog\settings.py
+db.sqlite3
+media
+
+# Docker
+.DS_Store
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# Git
+.git
+
+# Directories created by virtualenv
+bin/
+include/
+lib/
+lib64/
+share/
+pyvenv.cfg
+.venv/
+.venv.old/
+ENV/
+
+# OS generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

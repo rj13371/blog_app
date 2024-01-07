@@ -1,0 +1,20 @@
+Django Blog App
+
+## Built with
+
+- Python
+- Django
+
+## Quick start
+
+- git clone this repo
+- cd into the root folder
+- Install dependencies: `pip install -r requirements.txt`
+- Start the server: `python manage.py runserver`
+- Run tests: `python manage.py test blog_app.selenium_tests.run`
+
+## Build and Run with Docker
+
+- Build the docker image `docker build -t my-app .`
+- Run the docker container `docker run -p 8000:8000 my-app`
+- Access the app at http://localhost:8000.
