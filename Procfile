@@ -1,1 +1,1 @@
-web: gunicorn --bind :8000 --workers 3 --threads 2 blog_app.blog_app.wsgi:application
+web: gunicorn --bind :8000 --workers 3 --threads 2 blog_app.wsgi:application
