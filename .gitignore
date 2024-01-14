@@ -21,8 +21,6 @@ media
 # Docker
 .DS_Store
 .dockerignore
-Dockerfile
-docker-compose.yml
 
 # Git
 .git
