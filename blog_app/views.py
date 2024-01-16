@@ -5,6 +5,10 @@ from django.views import generic
 
 from .models import Post
 
+class LandingView(generic.TemplateView):
+    template_name = "blog/landing.html"
+    context_object_name = "landing"
+
 class PostView(generic.ListView):
     model = Post
     template_name = "blog/index.html"

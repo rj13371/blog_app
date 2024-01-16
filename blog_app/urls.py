@@ -19,5 +19,6 @@ from . import views
 
 app_name = "blog_app"
 urlpatterns = [
-    path("", views.PostView.as_view(), name="post"),
+    path("", views.LandingView.as_view(), name="landing"),
+    path("latest/", views.PostView.as_view(), name="post"),
 ]

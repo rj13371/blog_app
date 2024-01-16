@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rolands Blog</title>
+    {% load bootstrap5 %} {% bootstrap_css %}
+  </head>
+  <body>
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="/latest">Latest</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+
+    {% block content %}
+    <!-- This is where the content from other templates will go -->
+    {% endblock %} {% bootstrap_javascript %}
+  </body>
+</html>

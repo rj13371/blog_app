@@ -25,6 +25,8 @@ media
 # Git
 .git
 
+.env
+
 # Directories created by virtualenv
 bin/
 include/

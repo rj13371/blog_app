@@ -1,12 +1,16 @@
-{% if latest_blog_post_list %}
-<ul>
-  {% for post in latest_blog_post_list %}
-<li><h1>{{ post.post_title }}</h1></li>
-<li>{{ post.post_text }}</a></li>
-<li>{{ post.pub_date }}</a></li>
-  {% endfor %}
-</ul>
-{% else %}
-<p>No posts are available.</p>
-{% endif %}
-
+{% extends 'blog/base.html' %} {% block content %}
+<div class="container">
+  {% if latest_blog_post_list %}
+  <ul>
+    {% for post in latest_blog_post_list %}
+    <div class="card" style="width: 400px">
+      <div class="card-header">{{ post.post_title }}</div>
+      <div class="card-body">{{ post.post_text }}</div>
+      <div class="card-footer">{{ post.pub_date }}</div>
+    </div>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p>No posts are available.</p>
+  {% endif %} {% endblock %}
+</div>
